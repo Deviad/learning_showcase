@@ -1,0 +1,13 @@
+server:
+  servlet:
+    #    context-path: /api
+    context-path: /
+  port: 5050
+logging:
+  level:
+    root: WARN
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+    org.springframework.security: DEBUG
+---
+

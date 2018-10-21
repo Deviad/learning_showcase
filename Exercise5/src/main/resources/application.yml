@@ -1,0 +1,21 @@
+server:
+  port: 5050
+spring:
+  data:
+    mongodb:
+      authentication-database: admin
+      database: springbootdemo
+      host: localhost
+      password: example
+      port: 27017
+      repositories:
+        type: auto
+      username: root
+logging:
+  level:
+    root: WARN
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+    org.springframework.security: DEBUG
+---
+

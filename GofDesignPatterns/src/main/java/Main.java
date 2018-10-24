@@ -13,5 +13,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Decorator ---");
         structural.decorator.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Observer ---");
+        behavior.observer.Main.main();
     }
 }

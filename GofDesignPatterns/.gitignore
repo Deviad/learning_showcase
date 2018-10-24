@@ -12,7 +12,7 @@ TS ###
 *.iws
 *.iml
 *.ipr
-
+out/
 ### NetBeans ###
 /nbproject/private/
 /build/
@@ -20,3 +20,4 @@ TS ###
 /dist/
 /nbdist/
 /.nb-gradle/
+

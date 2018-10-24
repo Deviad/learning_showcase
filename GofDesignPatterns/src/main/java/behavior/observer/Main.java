@@ -93,6 +93,7 @@ public class Main {
     IObservable observable1 = new Observable();
     observable1.subscribe(observer1);
     observable1.fire(observer1);
+    observable1.fire(observer1.setTag("Azzzz"));
     observable1.fireAll();
     }
 }

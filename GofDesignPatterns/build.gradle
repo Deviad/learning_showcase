@@ -1,0 +1,21 @@
+apply plugin: 'idea'
+apply plugin: 'java'
+apply plugin: 'maven'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    compile 'com.google.guava:guava:19.0'
+    compile 'com.google.code.gson:gson:2.8.5'
+}
+
+idea {
+    module {
+        sourceDirs += file('src')
+    }
+}
+
+

@@ -62,7 +62,10 @@ class Car {
 
 interface ICarBuillder {
     Car getCar();
-
+    String getColour();
+    int getDoors();
+    ICarBuillder setColour(String colour);
+    ICarBuillder setDoors(int doors);
 }
 
 class FerrariBuilder implements ICarBuillder {
@@ -83,7 +86,7 @@ class FerrariBuilder implements ICarBuillder {
     public String getColour() {
         return colour;
     }
-
+    @Override
     public FerrariBuilder setColour(String colour) {
         this.colour = colour;
         return this;
@@ -107,19 +110,17 @@ class SportCarsBuildDirector {
     }
 
     public Car init() {
-       return this.builder.getCar().setColour("red").setNumDoors(2);
+
+       return this.builder.setColour("red").setDoors(2).getCar();
     }
 }
 
 
 class Client {
-
     public Car init() {
         FerrariBuilder builder = new FerrariBuilder();
-        builder.setColour("red").setDoors(2);
         SportCarsBuildDirector director = new SportCarsBuildDirector(builder);
         return director.init();
-
     }
 }
 

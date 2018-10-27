@@ -16,5 +16,11 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Observer ---");
         behavior.observer.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Facade ---");
+        structural.facade.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Singleton ---");
+        creational.singleton.Main.main();
     }
 }

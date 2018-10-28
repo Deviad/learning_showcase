@@ -15,7 +15,7 @@ public class Main {
         structural.decorator.Main.main();
         System.out.println("\n");
         System.out.println("--- Observer ---");
-        behavior.observer.Main.main();
+        behavioral.observer.Main.main();
         System.out.println("\n");
         System.out.println("--- Facade ---");
         structural.facade.Main.main();
@@ -28,5 +28,11 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Composite ---");
         structural.composite.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Iterator ---");
+        behavioral.iterator.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Strategy ---");
+        behavioral.strategy.Main.main();
     }
 }

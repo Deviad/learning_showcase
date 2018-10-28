@@ -34,8 +34,7 @@ public class SportsCarTest {
 
     @Test
     public void SportsCarTurnOn() {
-        Mockito.doReturn("Vroom, ").when((CarDecorator)sc).turnOn();
-        when(sc.turnOn()).thenReturn("Vroom, it goes fast");
+        Mockito.doReturn("Vroom, it goes fast").when((CarDecorator)sc).turnOn();
         assertEquals("Vroom, it goes fast", sc.turnOn());
         verify(sc).turnOn();
     }

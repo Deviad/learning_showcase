@@ -9,8 +9,8 @@ public class CarDecorator {
         this.car = car;
     }
 
-    public void turnOn() {
-         car.turnOn();
+    public String turnOn() {
+       return  car.turnOn();
     }
 
 }

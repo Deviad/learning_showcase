@@ -8,7 +8,7 @@ public class Car {
         return this;
     }
 
-    public void turnOn() {
-        System.out.print("Vroom, ");
+    public String turnOn() {
+        return "Vroom, ";
     }
  }

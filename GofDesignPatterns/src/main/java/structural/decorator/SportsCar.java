@@ -6,10 +6,8 @@ public class SportsCar extends CarDecorator {
         super(car);
     }
 
-    public void turnOn() {
-        super.turnOn();
-
-        System.out.println("It goes fast!");
+    public String turnOn() {
+        return super.turnOn() + "It goes fast!";
     }
 
 }

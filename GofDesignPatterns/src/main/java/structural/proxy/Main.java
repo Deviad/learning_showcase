@@ -1,7 +1,7 @@
 package structural.proxy;
 
-/*
-    Maybe we could use also composition instead of extending from Subject.
+/* Question
+    Maybe we could use an interface instead of extending from Subject.
  */
 
 abstract class Subject

@@ -25,5 +25,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Proxy ---");
         structural.proxy.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Composite ---");
+        structural.composite.Main.main();
     }
 }

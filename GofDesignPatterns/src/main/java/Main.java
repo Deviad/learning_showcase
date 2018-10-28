@@ -22,5 +22,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Singleton ---");
         creational.singleton.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Proxy ---");
+        structural.proxy.Main.main();
     }
 }

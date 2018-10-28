@@ -15,7 +15,6 @@ class MakeCar {
 
 public class Main {
     public static void main(String ...args) {
-        System.out.println("***Singleton Pattern Demo***\n");
         System.out.println("Trying to make a car for our team");
         MakeCar mc = MakeCar.getCar();
         System.out.println("Trying to make another car for our team");

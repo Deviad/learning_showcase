@@ -49,6 +49,7 @@ class Observable implements IObservable {
     @Override
     public void unsubscribe(IObserver observer) {
        observers.remove(observer);
+       System.out.println("Observer unsubscribed");
     }
 }
 
@@ -95,5 +96,6 @@ public class Main {
     observable1.fire(observer1);
     observable1.fire(observer1.setTag("Azzzz"));
     observable1.fireAll();
+    observable1.unsubscribe(observer1);
     }
 }

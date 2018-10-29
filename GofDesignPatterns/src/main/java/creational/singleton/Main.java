@@ -1,18 +1,5 @@
 package creational.singleton;
 
-class MakeCar {
-    private static MakeCar _car;
-    private MakeCar() {
-
-    }
-    private static class SingletonHelper {
-        private static final MakeCar _car = new MakeCar();
-    }
-    public static MakeCar getCar() {
-        return SingletonHelper._car;
-    }
-}
-
 public class Main {
     public static void main(String ...args) {
         System.out.println("Trying to make a car for our team");

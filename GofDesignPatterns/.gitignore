@@ -12,7 +12,7 @@ TS ###
 *.iws
 *.iml
 *.ipr
-out/
+/out/
 ### NetBeans ###
 /nbproject/private/
 /build/

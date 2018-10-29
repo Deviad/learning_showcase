@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.BlockJUnit4ClassRunner;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.MockitoRule;
 import structural.decorator.Car;
 import structural.decorator.CarDecorator;
@@ -15,7 +16,7 @@ import structural.decorator.SportsCar;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 import static org.mockito.Mockito.verify;
-@RunWith(BlockJUnit4ClassRunner.class)
+@RunWith(MockitoJUnitRunner.class)
 public class DecoatorTest {
     CarDecorator c = null;
     @Mock

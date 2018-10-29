@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class Microsoft implements Iterable<Microsoft> {
+public class Microsoft implements Iterable<Product> {
 
     public Microsoft() {
 
@@ -12,15 +12,15 @@ public class Microsoft implements Iterable<Microsoft> {
 
     private String name;
 
-    private final Set<Microsoft> products = new LinkedHashSet<>();
+    private final Set<Product> products = new LinkedHashSet<>();
 
 
-    public void add(final Microsoft productName) {
-        products.add(productName);
+    public void add(final Product product) {
+        products.add(product);
     }
 
     @Override
-    public final Iterator<Microsoft> iterator() {
+    public final Iterator<Product> iterator() {
         return products.iterator();
     }
 

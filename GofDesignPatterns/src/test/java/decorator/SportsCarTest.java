@@ -35,10 +35,11 @@ public class SportsCarTest {
 //        PowerMockito
 //                .replace(method(CarDecorator.class, "turnOn"))
 //                .with(method(SportsCarTest.class, "getString"));
-
+        Car car = spy(new Car());
+        SportsCar sc = spy(new SportsCar(car));
         stub(method(CarDecorator.class, "turnOn")).toReturn("Vroom, ");
-
-        assertEquals("Vroom, It goes fast!", new SportsCar(new Car()).turnOn());
-
+        assertEquals("Vroom, It goes fast!", sc.turnOn());
+        verify(sc).turnOn();
+        verify(car).turnOn();
     }
 }

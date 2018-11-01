@@ -34,5 +34,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Strategy ---");
         behavioral.strategy.Main.main();
+        System.out.println("\n");
+        System.out.println("--- State ---");
+        behavioral.state.Main.main();
     }
 }

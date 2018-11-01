@@ -57,7 +57,7 @@ public class Main {
             r.run();
         } finally {
             in.close();
-            System.exit(0);
+//            System.exit(0);
         }
     }
 }

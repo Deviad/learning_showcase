@@ -1,3 +1,4 @@
+import composite.CompositeTest;
 import decorator.DecoratorTest;
 import decorator.SportsCarTest;
 import iterator.IteratorTest;
@@ -10,7 +11,8 @@ import singleton.SingletonTest;
         DecoratorTest.class,
         SportsCarTest.class,
         IteratorTest.class,
-        SingletonTest.class
+        SingletonTest.class,
+        CompositeTest.class
 })
 public class MainTest {
 

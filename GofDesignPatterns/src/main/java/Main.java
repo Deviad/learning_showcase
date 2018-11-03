@@ -1,4 +1,4 @@
-
+import java.io.IOException;
 
 public class Main {
 
@@ -53,5 +53,9 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Chain of Responsibility ---");
         behavioral.chainofresponsibility.Main.main();
+
+        System.out.println("\n");
+        System.out.println("--- Command Pattern ---");
+        behavioral.command.Main.main();
     }
 }

@@ -55,9 +55,6 @@ public class Main {
             System.out.println(ex.getMessage());
             System.out.println("The program will restart");
             r.run();
-        } finally {
-            in.close();
-//            System.exit(0);
         }
     }
 }

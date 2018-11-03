@@ -2,7 +2,7 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("Hello World!");
         System.out.println("\n");
         System.out.println("--- Abstract Factory ---");
@@ -57,5 +57,9 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Command Pattern ---");
         behavioral.command.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Flyweight Pattern ---");
+        behavioral.flyweight.Main.main();
+        System.exit(0);
     }
 }

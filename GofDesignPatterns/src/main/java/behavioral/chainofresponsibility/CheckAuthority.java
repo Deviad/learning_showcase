@@ -1,6 +1,5 @@
 package behavioral.chainofresponsibility;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 class CheckAuthority {

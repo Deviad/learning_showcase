@@ -32,10 +32,24 @@ public class Main {
         System.out.println("--- Iterator ---");
         behavioral.iterator.Main.main();
         System.out.println("\n");
-        System.out.println("--- Strategy ---");
-        behavioral.strategy.Main.main();
-        System.out.println("\n");
+//        System.out.println("--- Strategy ---");
+//        behavioral.strategy.Main.main();
+//        System.out.println("\n");
         System.out.println("--- State ---");
         behavioral.state.Main.main();
+        System.out.println("\n");
+        System.out.println("--- Prototype ---");
+        try {
+            creational.prototype.Main.main();
+        } catch (CloneNotSupportedException e) {
+            e.printStackTrace();
+        }
+        System.out.println("--- Factory ---");
+        try {
+            creational.factory.Main.main();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 }

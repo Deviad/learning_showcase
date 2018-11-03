@@ -32,9 +32,9 @@ public class Main {
         System.out.println("--- Iterator ---");
         behavioral.iterator.Main.main();
         System.out.println("\n");
-//        System.out.println("--- Strategy ---");
-//        behavioral.strategy.Main.main();
-//        System.out.println("\n");
+        System.out.println("--- Strategy ---");
+        behavioral.strategy.Main.main();
+        System.out.println("\n");
         System.out.println("--- State ---");
         behavioral.state.Main.main();
         System.out.println("\n");
@@ -50,6 +50,8 @@ public class Main {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        System.out.println("\n");
+        System.out.println("--- Chain of Responsibility ---");
+        behavioral.chainofresponsibility.Main.main();
     }
 }

@@ -1,7 +1,7 @@
 package creational.factory;
 
 interface IAnimalFactory {
-    default Object getAnimalType(Class<?> className) throws Exception {
-        return className.getDeclaredConstructor().newInstance();
+    default IAnimal getAnimalType(Class<?> className) throws Exception {
+        return (IAnimal) className.getDeclaredConstructor().newInstance();
     }
 }

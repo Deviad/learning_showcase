@@ -60,6 +60,8 @@ public class Main {
         System.out.println("\n");
         System.out.println("--- Flyweight Pattern ---");
         behavioral.flyweight.Main.main();
+        System.out.println("--- Mediator Pattern ---");
+        behavioral.mediator.Main.main();
         System.exit(0);
     }
 }

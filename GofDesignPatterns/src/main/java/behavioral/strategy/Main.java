@@ -4,13 +4,10 @@ import behavioral.strategy.choices.FirstChoice;
 import behavioral.strategy.choices.IChoice;
 import behavioral.strategy.choices.SecondChoice;
 import behavioral.strategy.context.Context;
-import com.sun.tools.corba.se.idl.InvalidArgument;
-import org.omg.CORBA.DynAnyPackage.Invalid;
 
-import java.io.IOException;
 import java.util.Scanner;
 
-class InvalidChoice extends Error {
+class InvalidChoice extends Exception {
     InvalidChoice() {
         super("An invalid choice was made");
     }
@@ -19,7 +16,7 @@ class InvalidChoice extends Error {
 
 public class Main {
 
-    private static void commandPrompt(final Scanner in, final Context ctx) {
+    private static void commandPrompt(final Scanner in, final Context ctx) throws InvalidChoice {
         IChoice ic;
         String input1, input2;
         for (int i = 1; i <= 2; i++) {
@@ -47,14 +44,14 @@ public class Main {
     public static void main(String ...args) {
         Scanner in = new Scanner(System.in);
         Context ctx = new Context();
-        Runnable r = ()-> commandPrompt(in, ctx);
+        Runnable r = ()-> {
+            try {
+                commandPrompt(in, ctx);
+            } catch (InvalidChoice invalidChoice) {
+                invalidChoice.printStackTrace();
+            }
+        };
 
-        try {
-            r.run();
-        } catch(InvalidChoice | Exception ex) {
-            System.out.println(ex.getMessage());
-            System.out.println("The program will restart");
-            r.run();
-        }
+        r.run();
     }
 }

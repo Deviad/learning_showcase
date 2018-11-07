@@ -1,44 +1,47 @@
-import java.io.IOException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 
 public class Main {
+    private static Logger logger = LogManager.getLogger(Main.class);
 
-    public static void main(String[] args) throws Exception {
-        System.out.println("Hello World!");
-        System.out.println("\n");
-        System.out.println("--- Abstract Factory ---");
+    public static void main(String[] args) {
+        logger.info("Hello World!");
+        logger.info("\n");
+        logger.info("--- Abstract Factory ---");
         creational.abstractFactory.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Builder ---");
+        logger.info("\n");
+        logger.info("--- Builder ---");
         creational.builder.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Decorator ---");
+        logger.info("\n");
+        logger.info("--- Decorator ---");
         structural.decorator.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Observer ---");
+        logger.info("\n");
+        logger.info("--- Observer ---");
         behavioral.observer.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Facade ---");
+        logger.info("\n");
+        logger.info("--- Facade ---");
         structural.facade.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Singleton ---");
+        logger.info("\n");
+        logger.info("--- Singleton ---");
         creational.singleton.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Proxy ---");
+        logger.info("\n");
+        logger.info("--- Proxy ---");
         structural.proxy.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Composite ---");
+        logger.info("\n");
+        logger.info("--- Composite ---");
         structural.composite.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Iterator ---");
+        logger.info("\n");
+        logger.info("--- Iterator ---");
         behavioral.iterator.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Strategy ---");
+        logger.info("\n");
+        logger.info("--- Strategy ---");
         behavioral.strategy.Main.main();
-        System.out.println("\n");
-        System.out.println("--- State ---");
+        logger.info("\n");
+        logger.info("--- State ---");
         behavioral.state.Main.main();
-        System.out.println("\n");
-        System.out.println("--- Prototype ---");
+        logger.info("\n");
+        logger.info("--- Prototype ---");
         try {
             creational.prototype.Main.main();
         } catch (CloneNotSupportedException e) {

@@ -7,7 +7,7 @@ public class MyUndoCommand implements ICommand {
         receiver=recv;
     }
     @Override
-    public void Do() {
+    public void doSomething() {
         receiver.performUndo();
     }
 }

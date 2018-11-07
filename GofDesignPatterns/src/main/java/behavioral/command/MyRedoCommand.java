@@ -8,7 +8,7 @@ class MyRedoCommand implements ICommand
         receiver=recv;
     }
     @Override
-    public void Do()
+    public void doSomething()
     {
         //Call redo in receiver
         receiver.performRedo();

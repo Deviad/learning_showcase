@@ -8,6 +8,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoJUnitRunner;
 import org.mockito.junit.MockitoRule;
+import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import structural.decorator.Car;
 import structural.decorator.CarDecorator;
 import static org.junit.Assert.assertEquals;

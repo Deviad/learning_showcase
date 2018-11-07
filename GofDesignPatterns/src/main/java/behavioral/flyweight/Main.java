@@ -8,8 +8,8 @@ public class Main {
     public static void main(String... args) {
         RobotFactory myfactory = new RobotFactory();
 
-        IRobot shape = myfactory.GetRobotFromFactory("small");
-        shape.Print();
+        IRobot shape = myfactory.getRobotFromFactory("small");
+        shape.print();
 
         /*
             Showing off the new functional approach vs the old imperative one.
@@ -17,20 +17,20 @@ public class Main {
 
         Stream<Optional<IRobot>> robots;
         robots = Stream.generate(
-                () ->  Optional.ofNullable(myfactory.GetRobotFromFactory("small"))
+                () ->  Optional.ofNullable(myfactory.getRobotFromFactory("small"))
         ).limit(10);
         robots.forEach(s->
-            s.ifPresent(IRobot::Print));
+            s.ifPresent(IRobot::print));
 
-        int NumOfDistinctRobots = myfactory.TotalObjectsCreated();
+        int NumOfDistinctRobots = myfactory.totalObjectsCreated();
         System.out.println("\nDistinct Robot objects created till now= " + NumOfDistinctRobots);
 
         for (int i = 0; i < 5; i++) {
-            shape = myfactory.GetRobotFromFactory("large");
-            shape.Print();
+            shape = myfactory.getRobotFromFactory("large");
+            shape.print();
         }
 
-        NumOfDistinctRobots = myfactory.TotalObjectsCreated();
+        NumOfDistinctRobots = myfactory.totalObjectsCreated();
         System.out.println("\n Finally no of Distinct Robot objects created: " + NumOfDistinctRobots);
     }
 }

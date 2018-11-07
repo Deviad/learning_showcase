@@ -6,6 +6,6 @@ class Invoke
     public void ExecuteCommand(ICommand cmd)
     {
         this.cmd=cmd;
-        cmd.Do();
+        cmd.doSomething();
     }
 }

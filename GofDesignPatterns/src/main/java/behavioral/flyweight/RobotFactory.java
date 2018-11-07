@@ -7,12 +7,12 @@ class RobotFactory
 {
     Map<String, IRobot> shapes = new HashMap<String, IRobot>();
 
-    public int TotalObjectsCreated()
+    public int totalObjectsCreated()
     {
         return shapes.size();
     }
 
-    public IRobot GetRobotFromFactory(String RobotCategory)
+    public IRobot getRobotFromFactory(String RobotCategory)
     {
         IRobot robotCategory = null;
         try {

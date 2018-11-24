@@ -7,7 +7,7 @@ public class Main {
         Invoke inv = new Invoke();
         MyUndoCommand unCmd = new MyUndoCommand(intendedreceiver);
         MyRedoCommand reCmd = new MyRedoCommand(intendedreceiver);
-        inv.ExecuteCommand(unCmd);
-        inv.ExecuteCommand(reCmd);
+        inv.executeCommand(unCmd);
+        inv.executeCommand(reCmd);
     }
 }

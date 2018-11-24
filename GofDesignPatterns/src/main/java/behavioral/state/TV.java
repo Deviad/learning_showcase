@@ -1,7 +1,7 @@
 package behavioral.state;
 
 public class TV {
-    private RemoteControl state;
+    public RemoteControl state;
 
     public RemoteControl getState() {
         return state;

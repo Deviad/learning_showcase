@@ -2,16 +2,12 @@ package behavioral.strategy;
 
 import behavioral.strategy.choices.FirstChoice;
 import behavioral.strategy.choices.IChoice;
+import behavioral.strategy.choices.InvalidChoice;
 import behavioral.strategy.choices.SecondChoice;
 import behavioral.strategy.context.Context;
 
 import java.util.Scanner;
 
-class InvalidChoice extends Exception {
-    InvalidChoice() {
-        super("An invalid choice was made");
-    }
-}
 
 
 public class Main {

@@ -1,8 +1,8 @@
 package behavioral.command;
 
-interface ICommand
+public interface ICommand
 {
-    void Do();
+    void doIt();
 }
 
 

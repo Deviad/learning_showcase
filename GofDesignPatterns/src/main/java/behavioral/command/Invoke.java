@@ -1,11 +1,11 @@
 package behavioral.command;
 
-class Invoke
+public class Invoke
 {
     ICommand cmd;
-    public void ExecuteCommand(ICommand cmd)
+    public void executeCommand(ICommand cmd)
     {
         this.cmd=cmd;
-        cmd.Do();
+        cmd.doIt();
     }
 }

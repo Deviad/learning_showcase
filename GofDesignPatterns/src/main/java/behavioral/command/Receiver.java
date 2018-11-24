@@ -1,12 +1,12 @@
 package behavioral.command;
 
-class Receiver
+public class Receiver
 {
-    void performUndo()
+    public void performUndo()
     {
         System.out.println("Executing -MyUndoCommand");
     }
-    void performRedo()
+    public void performRedo()
     {
         System.out.println("Executing -MyRedoCommand");
     }
